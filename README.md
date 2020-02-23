@@ -1,2 +1,2 @@
 # Waves-Blog
-This is the site web of Weaves Blog
+Site web of Weaves Blog
