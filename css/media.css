@@ -53,3 +53,24 @@
     width: 100%;
   }
 }
+
+@media screen and (max-width:768px){
+
+  .banner{
+    grid-template-columns: auto;
+    grid-template-rows: 1fr 1fr;
+    align-items: start;
+    gap: 0;
+  }
+  .banner img {
+    grid-column: 1;
+    grid-row: 1;
+    max-height: unset;
+
+  }
+  .banner__content {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+}
