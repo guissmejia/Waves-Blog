@@ -1,0 +1,119 @@
+@media screen and (max-width: 768px) {
+  body {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  .blog__container .blog__container__content img {
+    height: 400px;
+  }
+
+  .blog__container__suggestions {
+    padding: 0 1em 23% 1em;
+  }
+
+  .blog__container__suggestions-items {
+    grid-template-rows: 10% 45% 45% 45%;
+  }
+
+  .blog__container__suggestions-items .item-1,
+  .item-2 {
+    border-right: none;
+    border-bottom: 1px solid var(--gray-color);
+  }
+
+  .blog__container__suggestions-items article {
+    padding: 1em;
+  }
+
+  .blog__container__suggestions-items h3 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .blog__container__suggestions-items .item img {
+    height: 100%;
+  }
+
+  .blog__container__suggestions-items .item-1,
+  .item-2,
+  .item-3 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+
+  .footer__container {
+    grid-template-columns: 1fr;
+  }
+
+  .footer__container .footer__container__menu ul {
+    flex-direction: column;
+  }
+
+  .footer__container .footer__container__social-icons {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    width: 100%;
+  }
+
+  .blog__container .blog__container__content img {
+    height: 230px;
+  }
+
+  h1 {
+    font-size: 25px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  p,
+  a {
+    font-size: 14px;
+  }
+
+  .blog__container__suggestions-items {
+    grid-template-rows: 10% 35% 35% 35%;
+  }
+
+  .blog__container__suggestions {
+    padding: 0 1em 15% 1em;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .banner {
+    grid-template-columns: auto;
+    grid-template-rows: 1fr 1fr;
+    align-items: start;
+    gap: 0;
+  }
+  .banner img {
+    grid-column: 1;
+    grid-row: 1;
+    max-height: unset;
+  }
+  .banner__content {
+    grid-column: 1;
+    grid-row: 2;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .blogs-views {
+    grid-template-columns: 1fr 1fr ;
+  }
+}
+@media screen and (min-width:760px) and (max-width: 1024px) {
+  .blogs-views {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
