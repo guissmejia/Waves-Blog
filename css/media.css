@@ -45,11 +45,43 @@
   .footer__container{
     grid-template-columns: 1fr;
   }
+
+  .footer__container .footer__container__menu ul {
+    flex-direction: column;
+  }
+
+  .footer__container .footer__container__social-icons {
+    justify-content: center;
+  }
 }
 
 
 @media screen and (max-width:480px){
   body{
     width: 100%;
+  }
+  
+  .blog__container .blog__container__content img{
+    height: 230px;
+  }
+
+  h1{
+    font-size: 25px;
+  }
+
+  h3{
+    font-size: 20px;
+  }
+
+  p,a{
+    font-size: 14px;
+  }
+
+  .blog__container__suggestions-items {
+    grid-template-rows: 10% 35% 35% 35%;
+  }
+
+  .blog__container__suggestions{
+    padding: 0 1em 15% 1em;
   }
 }

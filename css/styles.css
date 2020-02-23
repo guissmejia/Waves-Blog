@@ -267,6 +267,11 @@ a {
 
 .footer__container .footer__container__social-icons span{
   margin: 0 .5em;
+  transition: all .3s;
+}
+
+.footer__container .footer__container__social-icons span:hover{
+  transform: scale(0.9);
 }
 
 .footer__container .footer__container__social-icons span a {
