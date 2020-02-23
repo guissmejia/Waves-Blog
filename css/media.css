@@ -106,3 +106,14 @@
     grid-row: 2;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .blogs-views {
+    grid-template-columns: 1fr 1fr ;
+  }
+}
+@media screen and (min-width:760px) and (max-width: 1024px) {
+  .blogs-views {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

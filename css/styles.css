@@ -10,7 +10,7 @@
   --black-color: #000000;
   --white-color: #ffffff;
   --gray-color: #d8cccc;
-  --green-color:#11614a;
+  --green-color: #11614a;
   --box: 0 2px 6px 0 rgba(0, 0, 0, 0.12), inset 0 -1px 0 0 #dadce0;
 }
 
@@ -63,7 +63,14 @@ h4 {
   margin: 0.5em auto;
   letter-spacing: 1px;
 }
-
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--green-color);
+}
 h1 {
   font-size: 35px;
 }
@@ -269,12 +276,12 @@ a {
   margin: 0;
 }
 
-.footer__container .footer__container__social-icons span{
-  margin: 0 .5em;
-  transition: all .3s;
+.footer__container .footer__container__social-icons span {
+  margin: 0 0.5em;
+  transition: all 0.3s;
 }
 
-.footer__container .footer__container__social-icons span:hover{
+.footer__container .footer__container__social-icons span:hover {
   transform: scale(0.9);
 }
 
@@ -331,7 +338,6 @@ a {
   margin-bottom: 30px;
   padding: 0 25px;
   align-items: center;
-
 }
 .banner img {
   grid-column: 1;
@@ -349,11 +355,10 @@ a {
   font-size: 35px;
 }
 
-.banner__content__resume{
+.banner__content__resume {
   line-height: normal;
 }
 .banner__content__link {
-
   display: inline-block;
   color: var(--white-color);
   margin: 10px 0px;
@@ -362,8 +367,46 @@ a {
   border-radius: 5px;
   box-shadow: var(--box);
 }
-.banner__content__link:hover{
-  box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.12), inset 0 -1px 0 0 #dadce0;;
+.banner__content__link:hover {
+  box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.12), inset 0 -1px 0 0 #dadce0;
 }
 
+.blogs-views {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 25px;
+  align-items: center;
+  background: #f3f3f3;
+  gap: 20px;
+}
 
+.blogs-views__item {
+  border-radius: 5px;
+  background: white;
+  overflow: hidden;
+}
+.blogs-views__content {
+  padding: 0 15px;
+}
+.blogs-views__item img {
+  width: 100%;
+}
+
+.blogs-views__content h2 {
+  line-height: normal;
+  margin: 0;
+  font-size: 25px;
+}
+
+.blogs-views__content p {
+  line-height: normal;
+}
+
+.blogs-views__content a {
+  display: inline-block;
+  color: var(--white-color);
+  padding: 0 20px;
+  background: var(--green-color);
+  border-radius: 5px;
+  box-shadow: var(--box);
+}
